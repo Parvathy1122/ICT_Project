@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Holiday Package Prediction</title>
+    <link rel="stylesheet" href="\static\css\style.css">
+</head>
+<body background="\static\images\imag1.jpg">
+    <div class="container">
+        <h1>Holiday Package Prediction</h1>
+        <form action="/result" method="post" id="input_form">
+            <label for="duration_of_pitch">Duration of Pitch:</label>
+            <input type="text" id="duration_of_pitch" name="duration_of_pitch" required><br>
+
+            <label for="number_of_followups">Number of Follow-ups:</label>
+            <input type="text" id="number_of_followups" name="number_of_followups" required><br>
+
+
+            <label for="number_of_trips">Number of Trips:</label>
+            <input type="text" id="number_of_trips" name="number_of_trips" required><br>
+
+            <label for="monthly_income">Monthly Income:</label>
+            <select id="monthly_income" name="monthly_income" required>
+                <option value='-2'>15,000 - 20,000</option>
+                <option value='-1'>20,000 - 25,000</option>
+                <option value='0'>25,000 - 30,000</option>
+                <option value='1'>30,000 - 35,000</option>
+                <option value='2'>35,000 - 40,000</option>
+            </select></br>
+
+
+            <label for="city_tier">City Tier:</label>
+            <input type="radio" id="city_tier_1" name="city_tier" value="1" required> 1</input>
+            <input type="radio" id="city_tier_2" name="city_tier" value="2" required> 2</input>
+            <input type="radio" id="city_tier_3" name="city_tier" value="3" required> 3</input><br>
+
+            <label for="product_pitched">Product Pitched:</label>
+            <input type="radio" id="product_pitched_basic" name="product_pitched" value="0" required> Basic
+            <input type="radio" id="product_pitched_standard" name="product_pitched" value="1" required> Standard
+            <input type="radio" id="product_pitched_deluxe" name="product_pitched" value="2" required> Deluxe
+            <input type="radio" id="product_pitched_super_deluxe" name="product_pitched" value="3" required> Super Deluxe
+            <input type="radio" id="product_pitched_king" name="product_pitched" value="4" required> King<br>
+
+            <label for="preferred_property_star">Preferred Property Star:</label>
+            <select id="preferred_property_star" name="preferred_property_star" required>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br>
+
+            <label for="passport">Passport:</label>
+            <input type="radio" id="passport_no" name="passport" value="0" required> No
+            <input type="radio" id="passport_yes" name="passport" value="1" required> Yes<br>
+
+            <label for="pitch_satisfaction_score">Pitch Satisfaction Score:</label>
+            <input type="radio" id="pitch_satisfaction_score_1" name="pitch_satisfaction_score" value="1" required> 1
+            <input type="radio" id="pitch_satisfaction_score_2" name="pitch_satisfaction_score" value="2" required> 2
+            <input type="radio" id="pitch_satisfaction_score_3" name="pitch_satisfaction_score" value="3" required> 3
+            <input type="radio" id="pitch_satisfaction_score_4" name="pitch_satisfaction_score" value="4" required> 4
+            <input type="radio" id="pitch_satisfaction_score_5" name="pitch_satisfaction_score" value="5" required> 5<br>
+
+            <label for="designation">Designation:</label>
+            <input type="radio" id="designation_manager" name="designation" value="0" required> Manager
+            <input type="radio" id="designation_senior_manager" name="designation" value="1" required> Senior Manager<br>
+            <input  type="radio" id="designation_executive" name="designation" value="2" required> Executive
+            <input  type="radio" id="designation_AVP" name="designation" value="3" required> AVP
+            <input  type="radio" id="designation_VP" name="designation" value="4" required> VP
+            <br>
+
+
+            <label for="marital_status">Martial Status:</label>
+            <input type="radio" id="marital_status_married" name="marital_status" value="0" required>Unmarried
+            <input type="radio" id="marital_status_unmarried" name="marital_status" value="1" required>Married
+            </br>
+
+
+            <button id="submit" type="submit">PREDICT</button>
+            <button id="reset" type="reset">RESET</button>
+        </form>
+    </div>
+</body>
+</html>
+
